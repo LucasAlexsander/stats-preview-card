@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+body {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0c1b;
+}
+
+.area-total {
+    height: inherit;
+    display: flex;
+    width: 1110px;
+    height: 390px;   
+    margin: auto
+}
+.container {
+    margin: 20px;
+    color: white;
+    width: 970px;
+    height: 362px;
+    background-color: #1c1938;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-area {
+    margin: 50px 70px;
+    width: 390px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.text-area .header h2 {
+    font-family: 'Inter';
+    font-size: 30px;
+    color: white;    
+}
+.text-area .header span {
+    color: #aa57d9;
+}
+.text-area .header p {
+    color: #787592;
+    font-family: 'Lexend Deca';
+}
+
+
+.second-area-text {
+    display: flex;
+    flex-direction: column;
+}
+.second-area-text .numbers {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-weight: 700;
+    margin-bottom: -30px;
+    margin-right: 25px;
+}
+
+.second-area-text .names {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lexend Deca';
+    color: #787592;
+    text-transform: uppercase;
+}
+
+/*IMAGE*/
+.image-area {
+    width: 440px;
+    height: auto;
+    background-image: url('../image/image-header-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.image-area .bg-purple {
+    height: 100%;
+    width: inherit;
+    background-color: purple;
+    opacity: 0.4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
