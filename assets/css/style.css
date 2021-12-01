@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    /*background-color: #0a0c1b;*/
+    background-color: white;
+}
+
+.area-total {
+    display: flex;
+    width: 100vw;
+    height: 100vh;   
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.5s linear;
+}
+  
+.text-area {   
+    background-color: #1c1938;
+    width: 480px;
+    height: 362px;
+    padding: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.5s linear;
+}
+
+.text-area .header h2 {
+    font-family: 'Inter';
+    font-size: 30px;
+    color: white;    
+}
+.text-area .header span {
+    color: #aa57d9;
+}
+.text-area .header p {
+    color: #787592;
+    font-family: 'Lexend Deca';
+}
+
+
+.second-area-text {
+    display: flex;
+    flex-direction: column;
+}
+.second-area-text .numbers {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-weight: 700;
+    margin-bottom: -30px;
+    margin-right: 25px;
+}
+
+.second-area-text .names {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lexend Deca';
+    color: #787592;
+    text-transform: uppercase;
+}
+
+/*IMAGE*/
+.image-area {
+    width: 438px;
+    height: 362px;
+    background-image: url('../image/image-header-desktop.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.5s linear;
+}
+.image-area .bg-purple {
+    height: 100%;
+    width: inherit;
+    background-color: purple;
+    opacity: 0.4;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+
+@media (max-width: 900px) {
+    .area-total {
+        flex-direction: row;
+    }
+    .text-area {
+        width: 438px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+    .image-area {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+@media (max-width: 438px) {
+    .text-area {
+        width: 360px;
+        height: 395px;
+    }
+    .image-area {
+        width: 360px;
+        background-image: url('../image/image-header-mobile.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media (max-width: 321px) {
+    .text-area {
+        width: 300px;
+    }
+    .image-area {
+        width: 300px;
+    }
+}
